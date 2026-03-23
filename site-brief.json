@@ -1,0 +1,188 @@
+{
+  "_build_pass": "1 \u2014 Brief Lock",
+  "_built_by": "Icarus via cron build run 2026-03-23",
+  "_date": "2026-03-23",
+  "_note": "Auto-generated brief. Claude Code builds from this in Pass 2.",
+  "site": {
+    "business_name": "Lake Charles Bathroom Remodeling",
+    "domain": "lakecharlesbathroomremodeling.com",
+    "niche": "Bathroom Remodeling",
+    "niche_slug": "bathroom-remodeling",
+    "city": "Lake Charles",
+    "state": "Louisiana",
+    "state_abbr": "LA",
+    "county": "Calcasieu Parish",
+    "phone": "(337) 520-8573",
+    "phone_formatted": "(337) 520-8573",
+    "phone_digits": "13375208573",
+    "email": "contact@lakecharlesbathroomremodeling.com",
+    "years_in_business": "9",
+    "tagline": "Lake Charles Bathroom Remodeling \u2014 Gulf Coast Craftsmanship, Built to Last",
+    "web3forms_key": "0219881f-13e5-4175-b720-517b8d10c028"
+  },
+  "seo": {
+    "primary_keyword": "bathroom remodeling lake charles la",
+    "search_volume": 40,
+    "keyword_difficulty": 30,
+    "cpc": 60.68,
+    "rental_tier": "$250/mo",
+    "meta_title": "Bathroom Remodeling in Lake Charles, LA | Lake Charles Bathroom Remodeling",
+    "meta_description": "Professional bathroom remodeling in Lake Charles, LA. Licensed & insured. Free estimates. Call (337) 520-8573."
+  },
+  "design": {
+    "primary_color": "#1e3a5a",
+    "accent_color": "#c8791a",
+    "style": "coastal_navy",
+    "font_heading": "Space Grotesk",
+    "font_body": "DM Sans",
+    "hero_style": "split_with_before_after"
+  },
+  "trust_signals": {
+    "badge_1": "Licensed & Insured",
+    "badge_2": "Free Estimates",
+    "badge_3": "5-Star Rated",
+    "badge_4": "Same-Day Quotes",
+    "years_experience": "9+",
+    "jobs_completed": "400+",
+    "guarantee": "Satisfaction Guaranteed"
+  },
+  "services": [
+    {
+      "slug": "full-bathroom-remodel",
+      "name": "Full Bathroom Remodel"
+    },
+    {
+      "slug": "shower-remodel",
+      "name": "Shower Remodel"
+    },
+    {
+      "slug": "bathtub-replacement",
+      "name": "Bathtub Replacement"
+    },
+    {
+      "slug": "tile-installation",
+      "name": "Tile Installation"
+    },
+    {
+      "slug": "vanity-upgrade",
+      "name": "Vanity Upgrade"
+    },
+    {
+      "slug": "storm-damage-remodel",
+      "name": "Storm Damage Remodel"
+    }
+  ],
+  "service_areas": [
+    "lake-charles",
+    "sulphur",
+    "westlake",
+    "moss-bluff",
+    "iowa",
+    "vinton",
+    "dequincy",
+    "carlyss",
+    "jennings",
+    "welsh"
+  ],
+  "testimonials": [
+    {
+      "name": "Sandra M.",
+      "city": "Lake Charles",
+      "stars": 5,
+      "text": "Completely transformed our master bath after Hurricane Laura water damage. Professional crew, finished on time, and the quality is excellent. Would recommend to anyone in Calcasieu Parish."
+    },
+    {
+      "name": "James T.",
+      "city": "Sulphur",
+      "stars": 5,
+      "text": "Used Lake Charles Bathroom Remodeling to convert our tub to a walk-in shower. Price was fair, crew was clean and respectful, and the tile work is flawless. Couldn't be happier."
+    },
+    {
+      "name": "Patricia K.",
+      "city": "Lake Charles",
+      "stars": 5,
+      "text": "Called for a free estimate and was impressed by their knowledge. They handled all the permits and finished two weeks ahead of schedule. The bathroom looks like it belongs in a magazine."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How much does a bathroom remodel cost in Lake Charles, LA?",
+      "answer": "Bathroom remodels in Lake Charles typically range from $8,000 to $28,000 depending on scope. A basic refresh runs $8,000\u2013$12,000, a mid-range remodel $12,000\u2013$18,000, and a full luxury remodel $18,000\u2013$28,000+. We provide free in-home estimates with no obligation."
+    },
+    {
+      "question": "How long does a bathroom remodel take?",
+      "answer": "Most bathroom remodels take 2\u20134 weeks from demo to final walkthrough. Simple cosmetic updates can finish in 1\u20132 weeks. Full gut-and-remodel projects may take 3\u20135 weeks."
+    },
+    {
+      "question": "Do you handle permits with the City of Lake Charles?",
+      "answer": "Yes \u2014 we manage all required permits through the City of Lake Charles and Calcasieu Parish building departments. Our licensed contractors meet all Louisiana code requirements."
+    },
+    {
+      "question": "Can you remodel a bathroom damaged by a hurricane or flooding?",
+      "answer": "Yes \u2014 this is one of our most common projects in Calcasieu Parish. We handle full tear-out and rebuild of bathrooms damaged by water intrusion, mold, or structural damage from hurricanes and tropical storms. We document work thoroughly for insurance claims."
+    },
+    {
+      "question": "Do you serve Sulphur, Westlake, and Moss Bluff?",
+      "answer": "Yes \u2014 we serve all of Calcasieu Parish including Sulphur, Westlake, Moss Bluff, Iowa, Vinton, DeQuincy, Carlyss, and surrounding communities."
+    }
+  ],
+  "pages": {
+    "root": [
+      "index.html",
+      "about.html",
+      "contact.html",
+      "pricing.html",
+      "faq.html",
+      "thank-you.html",
+      "404.html",
+      "sitemap.xml",
+      "robots.txt",
+      "privacy-policy.html",
+      "terms-of-service.html"
+    ],
+    "services": [
+      "services/full-bathroom-remodel.html",
+      "services/shower-remodel.html",
+      "services/bathtub-replacement.html",
+      "services/tile-installation.html",
+      "services/vanity-upgrade.html",
+      "services/storm-damage-remodel.html"
+    ],
+    "locations": [
+      "locations/lake-charles.html",
+      "locations/sulphur.html",
+      "locations/westlake.html",
+      "locations/moss-bluff.html",
+      "locations/iowa.html",
+      "locations/vinton.html",
+      "locations/dequincy.html",
+      "locations/carlyss.html",
+      "locations/jennings.html",
+      "locations/welsh.html"
+    ],
+    "blog": [
+      "blog/index.html",
+      "blog/how-much-does-bathroom-remodeling-cost-lake-charles-la.html",
+      "blog/bathroom-remodel-after-hurricane-damage-lake-charles.html",
+      "blog/tub-to-shower-conversion-lake-charles.html",
+      "blog/how-to-choose-bathroom-remodeling-contractor-lake-charles.html"
+    ]
+  },
+  "build": {
+    "github_repo": "lake-charles-bathroom-remodeling",
+    "github_org": "deme-cyber11",
+    "twilio_number": "(337) 520-8573",
+    "twilio_area_code": "337",
+    "ga4_id": "G-D6ZBY16329",
+    "clarity_id": "vqc68ce75g",
+    "indexnow_key": "a3f7b2c9d4e1f8a5b6c3d0e7f4a1b8c5",
+    "started": "2026-03-23",
+    "completed": "",
+    "qa_passed": false,
+    "qa_errors": 0,
+    "committed": false,
+    "domain_registered": false,
+    "deployed": false,
+    "gsc_submitted": false
+  }
+}
