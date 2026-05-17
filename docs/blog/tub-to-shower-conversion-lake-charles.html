@@ -16,7 +16,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.v1.css">
+<link rel="stylesheet" href="/css/styles.v1.css">
+    <link rel="stylesheet" href="/css/style.v2.5.css">
+    <link rel="stylesheet" href="/css/site-theme.css">
 <!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6ZBY16329"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D6ZBY16329');</script>
@@ -92,6 +94,7 @@
 </style>
   <meta name="twitter:title" content="Tub to Shower Conversion in Lake Charles, LA | Lake Charles Bathroom Remodeling" />
   <meta name="twitter:description" content="Convert your bathtub to a walk-in shower in Lake Charles, LA. Learn about benefits, costs, timelines, and accessibility options. Call (337) 520-8573 for a free estimate." />
+    <meta name="theme-color" content="#1a1a2e">
 </head>
 <body>
 
@@ -145,7 +148,7 @@
     <article class="blog-article">
 
       <p>One of the most popular bathroom upgrades in Lake Charles is converting an old bathtub into a walk-in shower. Whether your tub is outdated, rarely used, or no longer practical for your household, a tub-to-shower conversion can transform the look and functionality of your bathroom. Here is everything you need to know about the process, from benefits and costs to timelines and accessibility options.</p>
-<img src="/images/niche-1.jpg" alt="Bathroom remodeling — Tub To Shower Conversion Lake Charles" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;display:block;">
+<img src="/images/niche-1.jpg" alt="Bathroom remodeling — Tub To Shower Conversion Lake Charles" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;display:block;" width="800" height="533">
 
 
       <h2>Why Convert Your Tub to a Shower?</h2>
@@ -245,7 +248,7 @@
 
 <!-- Phosphor Icons (defer) -->
 <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
-<script defer src="../js/main.js"></script>
+<script defer src="/js/main.js"></script>
 
 <div class="floating-cta" id="floating-cta">
   <a href="tel:+13375208573" class="fcta-call" aria-label="Call Now"><span class="fcta-label">Call Now</span><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></a>
@@ -258,6 +261,17 @@
   window.addEventListener('scroll',function(){
     el.classList.toggle('visible',window.scrollY>80);
   },{passive:true});
+})();
+</script>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  if(!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }});
+  },{threshold:0.1});
+  document.querySelectorAll('.reveal,.feature-card,.service-card,.why__item,.process__card,.testimonial-card,.area-card').forEach(function(el){ io.observe(el); });
 })();
 </script>
 </body>

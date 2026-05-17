@@ -16,7 +16,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.v1.css">
+<link rel="stylesheet" href="/css/styles.v1.css">
+    <link rel="stylesheet" href="/css/style.v2.5.css">
+    <link rel="stylesheet" href="/css/site-theme.css">
 <!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6ZBY16329"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D6ZBY16329');</script>
@@ -92,6 +94,7 @@
 </style>
   <meta name="twitter:title" content="Bathroom Remodel After Hurricane Damage in Lake Charles | Lake Charles Bathroom Remodeling" />
   <meta name="twitter:description" content="Expert bathroom restoration after hurricane damage in Lake Charles, LA. Water damage repair, mold remediation, insurance documentation, and full rebuilds. Call (337) 520-8573." />
+    <meta name="theme-color" content="#1a1a2e">
 </head>
 <body>
 
@@ -145,7 +148,7 @@
     <article class="blog-article">
 
       <p>Lake Charles and Calcasieu Parish have experienced some of the most devastating hurricane seasons in recent memory. Hurricane Laura made landfall in August 2020 as a powerful Category 4 storm, causing catastrophic damage to homes across Southwest Louisiana. Just weeks later, Hurricane Delta followed the same path, compounding the destruction. For many homeowners, bathrooms were among the hardest-hit rooms due to water intrusion through damaged roofs, broken windows, and flooding.</p>
-<img src="/images/niche-2.jpg" alt="Bathroom remodeling — Bathroom Remodel After Hurricane Damage Lake Charles" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;display:block;">
+<img src="/images/niche-2.jpg" alt="Bathroom remodeling — Bathroom Remodel After Hurricane Damage Lake Charles" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;display:block;" width="800" height="533">
 
 
       <p>If your bathroom was damaged by a hurricane or tropical storm, a proper restoration goes far beyond surface-level repairs. Here is what you need to know about rebuilding your bathroom the right way.</p>
@@ -236,7 +239,7 @@
 
 <!-- Phosphor Icons (defer) -->
 <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
-<script defer src="../js/main.js"></script>
+<script defer src="/js/main.js"></script>
 
 <div class="floating-cta" id="floating-cta">
   <a href="tel:+13375208573" class="fcta-call" aria-label="Call Now"><span class="fcta-label">Call Now</span><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></a>
@@ -249,6 +252,17 @@
   window.addEventListener('scroll',function(){
     el.classList.toggle('visible',window.scrollY>80);
   },{passive:true});
+})();
+</script>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  if(!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }});
+  },{threshold:0.1});
+  document.querySelectorAll('.reveal,.feature-card,.service-card,.why__item,.process__card,.testimonial-card,.area-card').forEach(function(el){ io.observe(el); });
 })();
 </script>
 </body>

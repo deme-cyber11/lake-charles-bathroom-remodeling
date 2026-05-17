@@ -16,7 +16,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://unpkg.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.v1.css">
+<link rel="stylesheet" href="/css/styles.v1.css">
+    <link rel="stylesheet" href="/css/style.v2.5.css">
+    <link rel="stylesheet" href="/css/site-theme.css">
 <!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6ZBY16329"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D6ZBY16329');</script>
@@ -51,6 +53,7 @@
 </script>
   <meta name="twitter:title" content="Storm Damage Bathroom Remodel in Lake Charles, LA | Lake Charles Bathroom Remodeling" />
   <meta name="twitter:description" content="Storm damage bathroom remodeling in Lake Charles, LA. Hurricane &amp; flood restoration. Insurance documentation. Call (337) 520-8573." />
+    <meta name="theme-color" content="#1a1a2e">
 </head>
 <body>
 
@@ -65,7 +68,7 @@
       <a href="/locations/lake-charles.html">Areas</a>
       <a href="/pricing.html">Pricing</a>
       <a href="/blog/">Blog</a>
-      <a href="/contact.html">Contact</a>
+      <a href="/contact.html#contact">Contact</a>
     </nav>
     <div class="header-cta">
       <a href="tel:+13375208573" class="header-phone">
@@ -93,7 +96,7 @@
   <div class="container">
     <h1>Storm Damage Bathroom Remodel in Lake Charles, LA</h1>
     <p>Hurricane and flood restoration, mold remediation, and complete bathroom rebuilds with insurance documentation for Calcasieu Parish homeowners.</p>
-<img src="/images/niche-3.jpg" alt="Bathroom remodeling — Storm Damage Remodel" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;display:block;">
+<img src="/images/niche-3.jpg" alt="Bathroom remodeling — Storm Damage Remodel" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;display:block;" width="800" height="533">
 
   </div>
 </section>
@@ -130,7 +133,7 @@
     <p class="section-subtitle">Get a free assessment on storm damage bathroom restoration in Lake Charles, LA. Licensed, insured, and experienced with hurricane repairs.</p>
     <div class="hero-btns" style="justify-content:center">
       <a href="tel:+13375208573" class="btn btn-primary"><i class="ph ph-phone"></i> (337) 520-8573</a>
-      <a href="/contact.html" class="btn btn--ghost"><i class="ph ph-envelope"></i> Free Estimate</a>
+      <a href="/contact.html#contact" class="btn btn--ghost"><i class="ph ph-envelope"></i> Free Estimate</a>
     </div>
   </div>
 </section>
@@ -182,7 +185,7 @@
         <a href="/pricing.html">Pricing</a>
         <a href="/faq.html">FAQ</a>
         <a href="/blog/">Blog</a>
-        <a href="/contact.html">Contact</a>
+        <a href="/contact.html#contact">Contact</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -199,12 +202,23 @@
 <div class="mobile-cta-bar">
   <div class="mobile-cta-inner">
     <a href="tel:+13375208573" class="cta-call"><i class="ph ph-phone"></i> Call Now</a>
-    <a href="/contact.html" class="cta-sms"><i class="ph ph-clipboard-dots"></i> Free Quote</a>
+    <a href="/contact.html#contact" class="cta-sms"><i class="ph ph-clipboard-dots"></i> Free Quote</a>
   </div>
 </div>
 
 <!-- Phosphor Icons (defer) -->
 <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
-<script defer src="../js/main.js"></script>
+<script defer src="/js/main.js"></script>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  if(!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }});
+  },{threshold:0.1});
+  document.querySelectorAll('.reveal,.feature-card,.service-card,.why__item,.process__card,.testimonial-card,.area-card').forEach(function(el){ io.observe(el); });
+})();
+</script>
 </body>
 </html>

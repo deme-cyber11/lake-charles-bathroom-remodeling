@@ -18,6 +18,8 @@
 <link rel="preload" as="image" href="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.v1.css">
+    <link rel="stylesheet" href="/css/style.v2.5.css">
+    <link rel="stylesheet" href="/css/site-theme.css">
 <!-- GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6ZBY16329"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-D6ZBY16329');</script>
@@ -37,8 +39,10 @@
   "email": "contact@lakecharlesbathroomremodeling.com",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "2900 Barksdale Blvd, Ste 4",
     "addressLocality": "Lake Charles",
     "addressRegion": "LA",
+    "postalCode": "70607",
     "addressCountry": "US"
   },
   "areaServed": [
@@ -172,6 +176,7 @@
   <meta name="twitter:title" content="Bathroom Remodeling in Lake Charles, LA | Lake Charles Bathroom Remodeling" />
   <meta name="twitter:description" content="Professional bathroom remodeling in Lake Charles, LA. Licensed &amp; insured. Free estimates. Call (337) 520-8573." />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#64748b">
 </head>
 <body>
 
@@ -476,9 +481,9 @@
         </div>
       </div>
       <form id="contactForm" class="contact-form" data-redirect="/thank-you.html">
-        <input type="hidden" name="access_key" value="0219881f-13e5-4175-b720-517b8d10c028">
-        <input type="hidden" name="subject" value="New Lead — Lake Charles Bathroom Remodeling">
-        <input type="hidden" name="from_name" value="Lake Charles Bathroom Remodeling Website">
+        <input type="hidden" name="site_domain" value="lakecharlesbathroomremodeling.com">
+        <input type="hidden" name="_subject" value="New Lead — Lake Charles Bathroom Remodeling">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <div class="form-group">
             <label for="name">Full Name *</label>
@@ -490,12 +495,12 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="john@example.com">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="john@example.com">
         </div>
         <div class="form-group">
-          <label for="service">Service Needed</label>
-          <select id="service" name="service">
+          <label for="service">Service Needed *</label>
+          <select id="service" name="service" required>
             <option value="">Select a service...</option>
             <option value="Full Bathroom Remodel">Full Bathroom Remodel</option>
             <option value="Shower Remodel">Shower Remodel</option>
@@ -538,6 +543,20 @@
 </section>
 
 <!-- ===== Footer ===== -->
+
+<section class="section section-light ba-gallery" id="gallery">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Work in Lake Charles</h2>
+      <p>Real bathroom transformations across Calcasieu Parish</p>
+    </div>
+    <div class="gallery-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px">
+      <div class="gallery-item"><img src="/images/niche-1.jpg" alt="Shower remodel Lake Charles LA" loading="lazy" width="800" height="533" style="width:100%;height:200px;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="/images/niche-2.jpg" alt="Bathroom remodel Lake Charles LA" loading="lazy" width="800" height="533" style="width:100%;height:200px;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="/images/niche-3.jpg" alt="Tile installation Lake Charles LA" loading="lazy" width="800" height="533" style="width:100%;height:200px;object-fit:cover;border-radius:8px"></div>
+    </div>
+  </div>
+</section>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -593,5 +612,16 @@
 <!-- Phosphor Icons (defer) -->
 <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
 <script defer src="js/main.js"></script>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  if(!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }});
+  },{threshold:0.1});
+  document.querySelectorAll('.reveal,.feature-card,.service-card,.why__item,.process__card,.testimonial-card,.area-card').forEach(function(el){ io.observe(el); });
+})();
+</script>
 </body>
 </html>
